@@ -1,11 +1,3 @@
----
-title1: Beyond
-title2: Being
-subtitle: Approaches of Transcendence in Ancient Philosophy
-event_date: September 19-22, 2022
-location: PUC-SP and UFABC, São Paulo, Brazil
-keywords: Conference, Philosophy, Ancient, Transcendence
----
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -25,12 +17,12 @@ keywords: Conference, Philosophy, Ancient, Transcendence
     <div class="banner">
         <img src="assets/banner.jpg" alt="Conference Template Banner">
         <div class="top-left">
-            <span class="title1">{{ title1 }}</span><span class="title2">{{ title2 }}</span> <span class="year">{{ year }}</span>
+            <span class="title1">{{ conference.title1 }}</span><span class="title2">{{ conference.title2 }}</span> <span class="year">{{ conference.year }}</span>
             <br><br>
-            <span class="subtitle">{{ subtitle }}</span>
+            <span class="subtitle">{{ conference.subtitle }}</span>
         </div>
         <div class="bottom-right">
-            {{ event_date }}<br> {{ location }}
+            {{ conference.event_date }}<br> {{ conference.location }}
         </div>
     </div>
 
