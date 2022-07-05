@@ -1,3 +1,11 @@
+---
+title1: Beyond
+title2: Being
+year: 2022
+date: September 19-22, 2022
+location: Pontifical Univ. of São Paulo (PUC-SP) and Federal Univ. of ABC (UFABC)
+keywords: Conference, Philosophy, Ancient, Transcendence
+---
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -5,10 +13,10 @@
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
+    <meta name="description" content="{{ title1 }} {{ title2 }} {{ year }} Conference">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
+    <meta name="KeyWords" content="{{ keywords }}">
     <title>Conference Template</title>
 </head>
 
@@ -17,10 +25,10 @@
     <div class="banner">
         <img src="assets/banner.jpg" alt="Conference Template Banner">
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+            <span class="title1">{{ title1 }}</span><span class="title2">{{ title2 }}</span> <span class="year">{{ year }}</span>
         </div>
         <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+            {{ date }}<br> {{location}}
         </div>
     </div>
 
