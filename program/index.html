@@ -54,13 +54,13 @@
     <h2>{{ day.display }}</h3>
 
     {% for activity in collections[day.id] | sort(attribute='data.time')%}
-
-    <table id="{{ activity.data.person }}" {% if keynote %} class="plenary" {% endif -%} {% if special %} class="title-special" {% endif -%}>
+    <table id="{{ activity.data.person }}"
+           {% if activity.data.keynote %} class="plenary" {% endif -%}>
         <tr>
             <td class="date" rowspan="3">
                 {{ activity.data.time }}
             </td>
-            <td class="title">
+            <td {% if activity.data.special %} class="title-special" {% else %} class="title" {% endif -%}>
                 {{ activity.data.title }}
             </td>
         </tr>
