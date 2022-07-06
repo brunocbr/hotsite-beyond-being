@@ -1,13 +1,10 @@
 <head>
-    <base href="..">
+    <base href={%- if page.fileSlug == "" -%} "." {%- else -%} ".." {% endif %}>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <!--     <script type="text/javascript" async
-         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-         </script> -->
-    <meta name="description" content="Conference Template">
+    <meta name="description" content="{{ conference.title1 }} {{ conference.title2 }} {{ conference.year }} Conference">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Program | Conference Template</title>
+    <meta name="KeyWords" content="{{ keywords }}">
+    <title>{{ conference.title1 }} {{ conference.title2 }} {{ conference.year }} | {{ title }}</title>
 </head>
