@@ -1,0 +1,7 @@
+[
+    {"title": "Conference Home Page", "name": "Home", "url": "."},
+    {"title": "Register for the Conference", "name": "Registration", "url": "registration"},
+    {"title": "Conference Program", "name": "Program", "url": "program"},
+    {"title": "Directions to the Conference", "name": "Directions", "url": "directions"},
+    {"title": "Conference Flyer", "name": "Flyer", "url": "flyer"}
+]

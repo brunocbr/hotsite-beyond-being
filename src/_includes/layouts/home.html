@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %} 
+{% block content %}
+<article>
+        {{ content | safe }}
+    <p>
+     
+        <h2>Organizers</h2>
+
+        {% for organizer in conference.organizers %}
+        <p>
+            {{ organizer.name }}, {{ organizer.institution }}
+        </p>
+        {% endfor %}
+
+    <table class="sponsors">
+        <tr>
+            {% for sponsor in conference.sponsors %}
+            <td class="sponsor">
+                <a href={{ sponsor.url }}>
+                    <img src={{ sponsor.img }} alt={{ sponsor.name }}>
+                </a>
+            </td>
+            {% endfor %}
+        </tr>
+    </table>
+</article>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <base href="..">
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+        <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+        <meta name="description" content="{{ conference.title1 }} {{ conference.title2 }} {{ conference.year }} Conference">
+        <meta name="resource-type" content="document">
+        <meta name="distribution" content="global">
+        <meta name="KeyWords" content="{{ keywords }}">
+        <title>{{ conference.title1 }} {{ conference.title2 }} {{ conference.year }} | {{ title }}</title>
+    </head>
+
+<body>
+    {% include "partials/banner.html" %}
+    {% include "partials/navigation.html" %}
+    {% block content %}{% endblock %}
+</body>
+
+{% include "partials/site-footer.html" %}
+</html>
+
+

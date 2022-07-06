@@ -1,0 +1,18 @@
+{
+    "title1": "Beyond",
+    "title2": "Being",
+    "subtitle": "Approaches of Transcendence in Ancient Philosophy",
+    "event_date": "September 19-22, 2022",
+    "extra_info": "XX International Archai Seminar",
+    "location": "PUC-SP and UFABC, São Paulo, Brazil",
+    "keywords": "Conference, Philosophy, Ancient, Transcendence",
+    "organizers": [
+        {"name": "Bruno Conte", "institution": "Pontifical Univ. of São Paulo"},
+        {"name": "Luca Pitteloud", "institution": "Federal Univ. of ABC"}
+    ],
+    "sponsors": [
+        {"name": "First Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten1.jpg"},
+        {"name": "Second Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten2.jpg"},
+        {"name": "Third Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten3.jpg"}
+    ]
+}

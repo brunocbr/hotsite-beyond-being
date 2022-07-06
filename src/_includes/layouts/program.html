@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<article>
+    {{ content | safe }}
+
+    {% for day in days %}
+    <h2>{{ day.display }}</h2>
+
+    {% for activity in collections[day.id] | sort(false, false, "data.time") %}
+    <table id="{{ activity.data.person }}"
+           {% if activity.data.keynote %} class="plenary" {% endif -%}>
+        <tr>
+            <td class="date" rowspan="3">
+                {{ activity.data.time }}
+                {%if activity.data.location %}
+                <br><a href={{ locations[activity.data.location].url }}>
+                  {{ locations[activity.data.location].display }}</a>
+                {% endif %}
+            </td>
+            <td {% if activity.data.special %} class="title-special" {% else %} class="title" {% endif -%}>
+                {{ activity.data.title }}
+            </td>
+        </tr>
+        <tr>
+             <td class="abstract">
+               {% if activity.templateContent %}
+               {{ activity.templateContent | striptags(true)}}
+               {% endif %}
+               <ul>
+                 {% for talk in activity.data.talks %}
+                 <li {%- if activity.data.keynote %} class="keyspeaker" {%- endif -%}>{{ talk.speaker }}. <i>{{ talk.title }}</i></li>
+                 {% endfor %}
+               </ul>
+             </td>
+        </tr>
+
+        {% if activity.data.chair %}
+        <tr>
+            <td class="chair">
+                Chair: {{ activity.data.chair }}
+            </td>
+        </tr>
+        {% endif %}
+
+    </table>
+    {% endfor %}
+{% endfor %}
+</article>
+{% endblock %}
+
