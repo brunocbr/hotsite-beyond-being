@@ -50,7 +50,8 @@ h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
 ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+ul li{list-style:inside; margin:0px auto 0px auto; padding:0px; text-align:left;}
+ul li.keyspeaker{list-style:square; margin:0px auto 0px auto; padding:10px; text-align:left; font-size: 1.33em}
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -103,6 +104,7 @@ td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; p
 td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
 td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.chair{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
 td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
 td.abstract img{display: block; margin: 4px auto 8px auto}
 table.plenary{padding-top: 8px; background: #ffffff;}

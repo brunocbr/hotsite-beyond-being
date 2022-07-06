@@ -5,9 +5,9 @@
     <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
+<!--     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
+    </script> -->
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
@@ -53,22 +53,42 @@
     {% for day in days %}
     <h2>{{ day.display }}</h3>
 
-    {% for activity in collections[day.id] | sort(attribute='data.time')%}
+    {% for activity in collections[day.id] | sort(false, false, "data.time") %}
     <table id="{{ activity.data.person }}"
            {% if activity.data.keynote %} class="plenary" {% endif -%}>
         <tr>
             <td class="date" rowspan="3">
                 {{ activity.data.time }}
+                {%if activity.data.location %}
+                <br><a href={{ locations[activity.data.location].url }}>
+                  {{ locations[activity.data.location].display }}</a>
+                {% endif %}
             </td>
             <td {% if activity.data.special %} class="title-special" {% else %} class="title" {% endif -%}>
                 {{ activity.data.title }}
             </td>
         </tr>
         <tr>
-            <td class="speaker">
-                {{ activity.data.person }}
-            </td>
+             <td class="abstract">
+               {% if activity.templateContent %}
+               {{ activity.templateContent | striptags(true)}}
+               {% endif %}
+               <ul>
+                 {% for talk in activity.data.talks %}
+                 <li {%- if activity.data.keynote %} class="keyspeaker" {% endif -%}>{{ talk.speaker }}. <i>{{ talk.title }}</i></li>
+                 {% endfor %}
+               </ul>
+             </td>
         </tr>
+
+        {% if activity.data.chair %}
+        <tr>
+          <td class="chair">
+            Chair: {{ activity.data.chair }}
+          </td>
+        </tr>
+        {% endif %}
+
     </table>
     {% endfor %}
     {% endfor %}
