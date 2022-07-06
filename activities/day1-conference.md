@@ -6,6 +6,6 @@ special: false
 tags: day1  
 talks:  
 - 
-  speaker: Dominic O’Meara  
+  speaker: Dominic O’Meara (Univ. Fribourg)  
   title: The Metaphysics of Transcendence in Late Antiquity
 ---
