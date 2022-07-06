@@ -12,9 +12,9 @@
         <tr>
             <td class="date" rowspan="3">
                 {{ activity.data.time }}
-                {%if activity.data.location %}
+                {% if activity.data.location %}
                 <br><a href={{ locations[activity.data.location].url }}>
-                  {{ locations[activity.data.location].display }}</a>
+                  @ {{ locations[activity.data.location].display }}</a>
                 {% endif %}
             </td>
             <td {% if activity.data.special %} class="title-special" {% else %} class="title" {% endif -%}>

@@ -15,3 +15,4 @@ talks:
     speaker: Third Person
     title: One more presentation in this session
 ---
+Alguma observação para esta seção.

@@ -14,5 +14,6 @@
         {"name": "First Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten1.jpg"},
         {"name": "Second Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten2.jpg"},
         {"name": "Third Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten3.jpg"}
-    ]
+    ],
+    "copyright": "B. L. Conte and L. J. Pitteloud"
 }

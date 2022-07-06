@@ -1,5 +1,8 @@
 {
     "tucarena": { "url": "https://goo.gl/maps/tTfBHtF3o2qF66p89",
                   "display": "Tucarena",
-                  "institution": "PUC-SP"}
+                  "institution": "PUC-SP"},
+    "ccnh": { "url": "https://goo.gl/maps/JZG9Xn1b2Yk4dNft5",
+              "display": "CCNH/UFABC",
+              "institution": "PUC-SP"}
 }
