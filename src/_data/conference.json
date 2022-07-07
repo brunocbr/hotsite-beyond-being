@@ -11,9 +11,10 @@
         {"name": "Luca Pitteloud", "institution": "Federal Univ. of ABC"}
     ],
     "sponsors": [
-        {"name": "First Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten1.jpg"},
-        {"name": "Second Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten2.jpg"},
-        {"name": "Third Sponsor Name", "url": "http://www.eyebleach.me", "img": "assets/kitten3.jpg"}
+        {"name": "Univ. Federal do ABC", "url": "https://www.ufabc.edu.br/", "img": "assets/Ufabc_logo.png"},
+        {"name": "PUC-SP PPG Filosofia", "url": "https://www.pucsp.br/pos-graduacao/mestrado-e-doutorado/filosofia", "img": "assets/brasao-PUCSP-assinatura-principal-RGB.png"},
+        {"name": "Capes", "url": "https://www.gov.br/capes", "img": "assets/logo-original-capes.png"},
+        {"name": "Fapesp", "url": "https://fapesp.br", "img": "assets/logo-fapesp.png"}
     ],
     "copyright": "B. L. Conte and L. J. Pitteloud"
 }
