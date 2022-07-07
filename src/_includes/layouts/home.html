@@ -15,7 +15,7 @@
     <table class="sponsors">
         <tr>
             {% for sponsor in conference.sponsors %}
-            <td class="sponsor">
+            <td class="sponsor" width={{ 100 / (conference.sponsors | length) }}% >
                 <a href={{ sponsor.url }}>
                     <img src={{ sponsor.img }} alt={{ sponsor.name }}>
                 </a>
