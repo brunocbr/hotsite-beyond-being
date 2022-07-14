@@ -1,0 +1,7 @@
+{% extends "layouts/base.html" %} 
+{% block content %}
+<article>
+    {{ content | safe }}
+    <iframe class="registration" src="{{ formurl }}"></iframe>
+</article>
+{% endblock %}

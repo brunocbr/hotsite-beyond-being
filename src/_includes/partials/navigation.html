@@ -3,7 +3,7 @@
         {% for entry in navigation %}
         <td class="navigation">
             <a {% if entry.url in page.url | url or entry.url == "." and page.fileSlug == "" %} class="current" {% endif %}
-               title={{ entry.title }} href={{ entry.url | url }}>{{ entry.name }}</a>
+               title="{{ entry.title }}" href={{ entry.url | url }}>{{ entry.name }}</a>
         </td>
         {% endfor %}
     </tr>
