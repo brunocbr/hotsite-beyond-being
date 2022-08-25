@@ -1,6 +1,7 @@
 ---
 title: 'Home'
-layout: 'layouts/home.html'
+layout_: 'layouts/home.html'
+layout:	'layouts/redirect.html'
 ---
 ## The conference
 
@@ -10,10 +11,9 @@ With the claim that the Form of the Good is beyond being (*epekeina tês ousias*
 
 Confirmed Speakers (in alphabetical order):
 
+-   Angela Ulacco (University of Leuven)
 -   Gábor Betegh (University of Cambridge)
 -   Gabriele Cornelli (University of Brasília)
+-   Lucas Angioni (Unicamp)
 -   Matthew Duncombe (University of Nottingham)
--   Rachel Gazolla (São Bento College)
--   Maurício Marsola (Federal University of São Paulo)
--   Marcelo Perine (Pontifical Catholic University of São Paulo)
--   Angela Ulacco (University of Fribourg)
+

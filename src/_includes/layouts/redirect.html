@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <base href={%- if page.fileSlug == "" -%} "." {%- else -%} ".." {% endif %}>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="{{ conference.title1 }} {{ conference.title2 }} {{ conference.year }} Conference">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="{{ keywords }}">
+    <title>{{ conference.title1 }} {{ conference.title2 }} {{ conference.year }} | {{ title }}</title>
+    <meta http-equiv="refresh" content="5; URL='{{ conference.redirect_url }}'"/>
+</head>
+<body>
+    {% include "partials/banner.html" %}
+    {% include "partials/navigation.html" %}
+    {% block content %}
+    <article>
+        <div align="center">
+            <p>You're being redirected to <a href="{{ conference.redirect_url }}">{{ conference.redirect_url }}</a>.</p>
+        </div>
+    </article>
+    {% endblock %}
+</body>
+{% include "partials/site-footer.html" %}
+</html>
+
